@@ -1,0 +1,90 @@
+a,
+a:link,
+a:visited,
+a:focus {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Roboto";
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Basis Grotesque Pro Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(../../fonts/BasisGrotesquePro-Light.ttf);
+}
+
+.heading-2 {
+  font-family: "Basis Grotesque Pro";
+  opacity: 0.8;
+
+  font-size: 7rem;
+  color: #151615;
+
+  @media only screen and(max-width:1400px) {
+    font-size: 6rem;
+  }
+}
+
+.text {
+  padding: 0.5rem;
+  font-size: 2rem;
+  opacity: 0.6;
+  color: #777;
+}
+
+.heading-3 {
+  width: 80%;
+  margin: auto;
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: transparent;
+  position: relative;
+  font-family: "Basis Grotesque Pro";
+  opacity: 0.8;
+  color: #777;
+  z-index: -1;
+
+  @media screen and (min-width: 800px) {
+    font-size: 6.5rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 8rem;
+  }
+
+  @media screen and (min-width: 1600px) {
+    font-size: 9.5rem;
+  }
+}
+
+.number {
+  font-size: 1.5rem;
+  font-family: "Roboto";
+  color: #fff;
+  padding: 2.5rem;
+}
+
+.cursor {
+  @media (hover: none) {
+    display: none;
+  }
+}

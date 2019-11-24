@@ -1,0 +1,193 @@
+@mixin pagemixin {
+  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
+  width: 100%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: 10% 0.5fr 0.5fr 1fr 10%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 10% 0.5fr 1fr 10%;
+  }
+
+  @media only screen and (max-width: 560px) {
+    grid-template-columns: 15% 1fr 15%;
+  }
+
+  @media only screen and (max-width: 425px) {
+    grid-template-columns: 5% 1fr 5%;
+  }
+  @media only screen and (max-width: 380px) {
+    grid-template-columns: 5% 1fr 5%;
+  }
+}
+
+@mixin page__wrapper {
+  grid-column: 4/5;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 800px) {
+    grid-column: 3/4;
+  }
+
+  @media only screen and (max-width: 560px) {
+    grid-column: 2/3;
+  }
+}
+
+@mixin beforeimg {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 18rem;
+  z-index: 3;
+  position: absolute;
+  top: 30%;
+  left: -115%;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #ffffff;
+  color: transparent;
+
+  @media only screen and (max-width: 1650px) {
+    left: -135%;
+  }
+  @media only screen and (max-width: 1445px) {
+    font-size: 15rem;
+    top: 35%;
+    left: -140%;
+  }
+  @media only screen and (max-width: 1150px) {
+    font-size: 13rem;
+    left: -145%;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 11.5rem;
+    top: 45%;
+    left: -90%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    left: -60%;
+    top: 45%;
+  }
+
+  @media only screen and (max-width: 670px) {
+    font-size: 9rem;
+  }
+
+  @media only screen and (max-width: 560px) {
+    font-size: 8rem;
+    left: -20%;
+    top: 55%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 6rem;
+    left: -20%;
+  }
+  @media only screen and (max-width: 425px) {
+    left: -10%;
+    top: 60%;
+  }
+  @media only screen and (max-width: 380px) {
+    left: 0%;
+    top: 60%;
+  }
+}
+@mixin beforeimgPortrait {
+  @include beforeimg;
+  font-size: 18rem;
+  top: 30%;
+  left: -135%;
+  @media only screen and (max-width: 1650px) {
+    left: -165%;
+  }
+  @media only screen and (max-width: 1445px) {
+    font-size: 15rem;
+    top: 35%;
+    left: -170%;
+  }
+  @media only screen and (max-width: 1150px) {
+    font-size: 12rem;
+    left: -160%;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 11rem;
+    top: 45%;
+    left: -90%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    left: -60%;
+    top: 45%;
+  }
+
+  @media only screen and (max-width: 670px) {
+    font-size: 9rem;
+  }
+
+  @media only screen and (max-width: 560px) {
+    font-size: 8rem;
+    left: -20%;
+    top: 55%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 6rem;
+    left: -20%;
+  }
+  @media only screen and (max-width: 425px) {
+    left: -10%;
+    top: 60%;
+  }
+  @media only screen and (max-width: 380px) {
+    left: 0%;
+    top: 60%;
+  }
+}
+
+@mixin afterimg {
+  font-family: "Roboto";
+  font-size: 10rem;
+  z-index: 3;
+  position: absolute;
+  bottom: 8%;
+  right: -10%;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fbf8f8;
+  color: transparent;
+
+  @media only screen and (max-width: 1900px) {
+    bottom: 15%;
+  }
+  @media only screen and (max-width: 1445px) {
+    font-size: 8rem;
+    bottom: 22%;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    font-size: 8rem;
+    bottom: 25%;
+  }
+
+  @media only screen and (max-width: 1050px) {
+    font-size: 7rem;
+    // bottom: 17%;
+    bottom: 15rem;
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: none;
+  }
+}

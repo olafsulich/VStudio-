@@ -1,0 +1,62 @@
+.decoration__lines {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  z-index: -10;
+
+  &__line {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 1px;
+    background: #2d2d2d;
+    opacity: 0.55;
+    z-index: -10;
+    &-1 {
+      left: 12%;
+
+      @media screen and (max-width: 450px) {
+        left: 30%;
+      }
+      @media screen and (min-width: 451px) and (max-width: 900px) {
+        left: 25%;
+      }
+    }
+
+    &-2 {
+      left: 32%;
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+      @media screen and (min-width: 451px) and (max-width: 900px) {
+        left: 50%;
+        display: block;
+      }
+    }
+
+    &-3 {
+      left: 60%;
+
+      @media screen and (max-width: 450px) {
+        display: none;
+      }
+      @media screen and (min-width: 451px) and (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    &-4 {
+      left: 88%;
+
+      @media screen and (max-width: 450px) {
+        left: 70%;
+      }
+      @media screen and (min-width: 451px) and (max-width: 900px) {
+        left: 75%;
+      }
+    }
+  }
+}

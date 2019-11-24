@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: none;
+}
+
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url(../../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../fonts/Merriweather-Regular.ttf);
+}
+.body {
+  font-family: "Roboto";
+  background-color: #151615;
+  background-size: cover;
+  font-size: 62.5%;
+  overflow: hidden;
+
+  @media only screen and (max-width: 1100px) {
+    font-size: 55%;
+  }
+}
+.container {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  width: 100%;
+  overflow: hidden;
+  cursor: none;
+}
+
+.pages {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 4;
+
+  &__dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__svg {
+      opacity: 0.6;
+      transform: scale(1.4);
+    }
+  }
+}
+.social {
+  position: absolute;
+  left: 2%;
+  top: 50%;
+  transform: translateY(-45%);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  z-index: 5;
+
+  @media only screen and (max-width: 1100px) {
+    display: none;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+
+    @media only screen and (max-width: 1050px) {
+      height: 1.8rem;
+      width: 1.5rem;
+      padding: 4.4rem;
+    }
+  }
+}
+
+.active {
+  opacity: 1;
+}
+
+.portrait__page {
+  height: 90vh;
+  height: calc(var(--vh, 1vh) * 90);
+  width: 100%;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 10% 1fr 1fr 1fr 10%;
+
+  @media only screen and (max-width: 1050px) {
+    grid-template-columns: 10% 0.5fr 0.5fr 1fr 10%;
+  }
+
+  @media only screen and (max-width: 800px) {
+    grid-template-columns: 10% 0.5fr 1fr 10%;
+  }
+
+  @media only screen and (max-width: 560px) {
+    grid-template-columns: 15% 1fr 15%;
+  }
+
+  @media only screen and (max-width: 425px) {
+    grid-template-columns: 10% 1fr 10%;
+  }
+  @media only screen and (max-width: 380px) {
+    grid-template-columns: 5% 1fr 5%;
+  }
+  &__wrapper {
+    @include page__wrapper;
+
+    &::before {
+      content: "PORTRAIT";
+      @include beforeimgPortrait;
+    }
+
+    &::after {
+      content: "01";
+      @include afterimg;
+    }
+    &__image {
+      transform: translateY(-10%);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.nature__page {
+  @include pagemixin;
+  overflow: hidden;
+
+  &__wrapper {
+    @include page__wrapper;
+    &::before {
+      content: "NATURE";
+      @include beforeimg;
+    }
+
+    &::after {
+      content: "02";
+      @include afterimg;
+    }
+    &__image {
+      transform: translateY(-10%);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.others__page {
+  @include pagemixin;
+  overflow: hidden;
+
+  &__wrapper {
+    @include page__wrapper;
+
+    &::before {
+      content: "OTHERS";
+      @include beforeimg;
+    }
+
+    &::after {
+      content: "03";
+      @include afterimg;
+    }
+    &__image {
+      transform: translateY(-10%);
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.nature__page,
+.others__page {
+  position: absolute;
+  top: 10%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  display: none;
+}

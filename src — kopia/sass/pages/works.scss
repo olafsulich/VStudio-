@@ -1,0 +1,27 @@
+.gallery {
+  background-color: #171717;
+
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &__portraits {
+    z-index: -1;
+
+    width: 80%;
+    margin: 50px auto;
+  }
+  &__nature {
+    width: 80%;
+    margin: 50px auto;
+  }
+
+  &__others {
+    width: 80%;
+    margin: 50px auto;
+  }
+}
+
+.item {
+  width: 100%;
+}
