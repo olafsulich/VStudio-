@@ -3,7 +3,7 @@
 Site for photographer Andrew Garnicz-Garnicki. Project's has three pages: home,pictures and videos.
 
 ## Motivation
-This is non-profit site for my friend Andrew. Primary goal for this project was to learn and pratice my skills. 
+This is non-profit site for my friend Andrew. Primary goal for this project was to learn how to work with client and pratice diffrent technologies.I learned also how to dealing with problems. 
  
 ## Screenshots
 ![Design](https://i.ibb.co/Q8XmKn6/Screen-Mobile.png)
