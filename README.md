@@ -1,15 +1,15 @@
 
-## Project title
+## Project title 🚀
 Site for photographer Andrew Garnicz-Garnicki. Project's has three pages: home,pictures and videos.
 
-## Motivation
+## Motivation 🎉
 This is non-profit site for my friend Andrew. Primary goal for this project was to learn how to work with client and pratice diffrent technologies.I learned also how to dealing with problems. 
  
-## Screenshots
+## Screenshots 📺
 ![Design](https://i.ibb.co/Q8XmKn6/Screen-Mobile.png)
 ![Design](https://i.ibb.co/V9xk1Z6/Screen-Mobile2.png)
 
-## Tech/framework used
+## Tech/framework used 🔧
 - HTML5
 - SCSS
 - ES6+
@@ -18,7 +18,7 @@ This is non-profit site for my friend Andrew. Primary goal for this project was 
 - [Simplex-NoiseJS](https://www.npmjs.com/package/simplex-noise)
 - [GSAP](https://greensock.com/gsap/)
 
-## Code Example/Issues
+## Code Example/Issues 🔍
 
 My biggest issue was to implement mouse wheel feature. I found prepared function for that.
 
@@ -38,16 +38,17 @@ function throttle(func, limit) {
 ```
 
 
-## Installation
+## Installation  📍 
+
 ```bash
 npm install 
 ```
 
-## Credits
+## Credits 👏
 https://tympanus.net/codrops/ helps me with many problems.
 
 
-## License
+## License 🔱
 Under license (MIT, Apache etc)
 
 MIT © [Olaf Sulich]()
